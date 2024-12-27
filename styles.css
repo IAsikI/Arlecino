@@ -3,16 +3,41 @@
     scroll-behavior: smooth;
   }
 }
+section {
+  border: #1b1b32 solid 2px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.7);
+}
+#nav-toggle {
+  background-color: #1b1b32;
+  color: #1f0f97;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Сховати меню за замовчуванням */
+.hidden {
+  display: none;
+}
+
 body {
   background: #f5f6f7;
   color: #1b1b32;
   font-family: Helvetica;
   margin: 0;
 }
+#img-caption {
+  text-align: center;
+  text-decoration: underline;
+}
 
 header {
   width: 100%;
-  height: 85px;
+  height: 50px;
   background-color: #1b1b32;
   display: flex;
   justify-content: space-between;
@@ -31,18 +56,16 @@ nav {
   height: 60px;
 }
 
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-inline-start: 0;
-  margin-block: 0;
-  height: 100%;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1b1b32;
+  border: 1px solid #ccc;
 }
 
 nav > ul > li {
-  color: #dfdfe2;
+  color: #c95a0b;
   margin: 0 0.2rem;
   padding: 0.2rem;
   display: block;
@@ -80,4 +103,48 @@ main {
 .gallery::after {
   content: '';
   width: 350px;
+}
+
+table {
+  width: 100%; /* Опціонально: ширина таблиці */
+  border-collapse: collapse; /* Прибирає проміжки між границями */
+}
+
+th,
+td {
+  border: 1px outset rgb(91, 3, 3); /* Встановлює границі між комірками */
+  padding: 8px; /* Додає внутрішні відступи */
+  text-align: left; /* Вирівнює текст по лівому краю */
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+#tribute-info {
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#tribute-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #171756;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+  color: #1b1b32;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+body {
+  margin: 0; /* Убираем отступы */
+  height: 100vh; /* Высота на весь экран */
+  background: radial-gradient(circle, gray 60%, #8bc34a 100%);
 }

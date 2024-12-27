@@ -11,20 +11,22 @@
       <img id="logo" src="logo.webp" />
       <h1>Арлекино</h1>
       <nav>
-        <ul>
-          <li><a href="#bio">Биография</a></li>
-          <li><a href="#basic_characteristics">Базовые характеристики</a></li>
-          <li><a href="#talants">Таланты</a></li>
-          <li><a href="#constellation">Созвездие</a></li>
-          <li><a href="#photo">Галерея</a></li>
-        </ul>
+  <button id="nav-toggle">Навигация </button>
+  <ul id="menu" class="hidden">
+    <li><a href="#bio">Биография</a></li>
+    <li><a href="#basic_characteristics">Базовые характеристики</a></li>
+    <li><a href="#talants">Таланты</a></li>
+    <li><a href="#constellation">Созвездие</a></li>
+    <li><a href="#photo">Галерея</a></li>
+  </ul>
+</nav>
       </nav>
     </header>
     <main id="main">
       <h1 id="title">Арлекино</h1>
       <p id="description">Роковая луна</p>
       <figure id="img-div">
-        <img id="image" src="Avatar.webp" style="max-width: 80%;" alt="Арлекино" />
+        <img id="image" src="Avatar.webp" style="max-width: 80%; height: auto;   display: block; margin: 0 auto;  " alt="Арлекино" />
         <figcaption id="img-caption">Аватар персонажа</figcaption>
       </figure>
       <div id="tribute-info">
@@ -505,15 +507,9 @@
         id="tribute-link"
         target="_blank"
         href="https://genshin-impact.fandom.com/ru/wiki/%D0%90%D1%80%D0%BB%D0%B5%D0%BA%D0%B8%D0%BD%D0%BE"
-        >Подробнее</a
+        >Подробнее на странице персонажа</a
       >
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
-
-<!--
-Ваш #image повинен використовувати властивості max-width та height, щоб змінювати розмір відповідно до ширини батьківського елемента,
- не перевищуючи початковий розмір
-
-Ваш елемент img повинен бути зцентрованим відповідно до батьківського елемента
--->
