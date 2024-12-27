@@ -149,5 +149,5 @@ figcaption {
 body {
   margin: 0; /* Убираем отступы */
   height: 100vh; /* Высота на весь экран */
-  background: radial-gradient(circle, gray 60%, #8bc34a 100%);
+  background: radial-gradient(circle, gray 60%, #9d0909 100%);
 }
