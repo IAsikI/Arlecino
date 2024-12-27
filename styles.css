@@ -109,11 +109,14 @@ table {
   width: 100%; /* Опціонально: ширина таблиці */
   border-collapse: collapse; /* Прибирає проміжки між границями */
 }
-
+.table-container {
+  overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+  -webkit-overflow-scrolling: touch; /* Плавная прокрутка для iOS */
+}
 th,
 td {
   border: 1px outset rgb(91, 3, 3); /* Встановлює границі між комірками */
-  padding: 8px; /* Додає внутрішні відступи */
+  padding: 8px 12px; /* Додає внутрішні відступи */
   text-align: left; /* Вирівнює текст по лівому краю */
 }
 
